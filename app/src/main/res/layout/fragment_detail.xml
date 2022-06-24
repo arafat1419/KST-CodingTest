@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@color/grey" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_username"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/grey"
+            app:layout_constraintEnd_toEndOf="@+id/img_user"
+            app:layout_constraintStart_toStartOf="@+id/img_user"
+            app:layout_constraintTop_toBottomOf="@+id/img_user"
+            tools:text="arafat1419" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_name"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_username"
+            app:layout_constraintStart_toStartOf="@+id/txt_username"
+            app:layout_constraintTop_toBottomOf="@+id/txt_username"
+            tools:text="Mohammad Arafat Maku" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_language_24"
+            app:layout_constraintEnd_toStartOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toStartOf="@+id/shapeableImageView2"
+            app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outline_smartphone_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_website"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+            tools:text="www.arafat1419.space" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_phone"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView2"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView2"
+            tools:text="0853-9493-3612" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_outline_email_24"
+            app:layout_constraintEnd_toEndOf="@+id/txt_website"
+            app:layout_constraintStart_toStartOf="@+id/txt_website"
+            app:layout_constraintTop_toBottomOf="@+id/txt_website" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_email"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView3"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView3"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView3"
+            tools:text="arafat1419@gmail.com" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"
+            app:layout_constraintTop_toBottomOf="@+id/txt_full_address" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_outline_pin_drop_24"
+            app:layout_constraintEnd_toEndOf="@+id/txt_phone"
+            app:layout_constraintStart_toStartOf="@+id/txt_phone"
+            app:layout_constraintTop_toBottomOf="@+id/txt_phone" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_full_address"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView4"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView4"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView4"
+            tools:text="Noberto Crossing \nApt. 950\nSouth Christy\n23505-1337" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_outline_business_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_company_name"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView5"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView5"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView5"
+            tools:text="Johns Group" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_company_phrase"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView5"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView5"
+            app:layout_constraintTop_toBottomOf="@+id/txt_company_name"
+            tools:text="'Configurable multimedia task-force'" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_company_bs"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView5"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView5"
+            app:layout_constraintTop_toBottomOf="@+id/txt_company_phrase"
+            tools:text="generate enterprise e-tailers" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYXJhZmF0MTQxOSIsImEiOiJja3E2bW1vdTkwMjNhMnVwY3hkbWMybHd5In0._iBUXnMl7ucQ5Oi8yTHFOQ</string>
+
+    <string name="full_address_format">%1$s\n%2$s\n%3$s\n%4$s</string>
+    <string name="company_phrase_format">\"%1$s\"</string>
+    <string name="check_your_connection">Check your connection</string>
+    <string name="visit_user">Visit User</string>
+    <string name="home">Home</string>
+    <string name="map">Map</string>
+</resources>

@@ -1,0 +1,9 @@
+package com.arafat1419.codingtest.core.domain.repository
+
+import com.arafat1419.codingtest.core.data.Resource
+import com.arafat1419.codingtest.core.domain.domain.UserDomain
+import kotlinx.coroutines.flow.Flow
+
+interface IDataRepository {
+    fun getUsers(): Flow<Resource<List<UserDomain>>>
+}
